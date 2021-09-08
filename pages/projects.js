@@ -16,8 +16,6 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 
 const Projects = () => {
-  const { colorMode } = useColorMode();
-
   return (
     <motion.div
       initial={{ scaleY: 0 }}
@@ -40,25 +38,6 @@ const Projects = () => {
             >
               <Image src={item.imageUrl} h="200px" w="100%" objectFit="cover" />
               <Box p={5}>
-                <Stack align="baseline" isInline>
-                  <Badge
-                    variant="solid"
-                    variantColor="teal"
-                    rounded="full"
-                    px={2}
-                  >
-                    New
-                  </Badge>
-                  <Badge
-                    variant="solid"
-                    variantColor="teal"
-                    rounded="full"
-                    px={2}
-                  >
-                    React
-                  </Badge>
-                </Stack>
-
                 <Text as="h1" fontSize="xl" pt={2}>
                   {item.name}
                 </Text>
