@@ -1,5 +1,12 @@
 import NextLink from "next/link";
-import { Flex, Link, IconButton, useColorMode, Text } from "@chakra-ui/react";
+import {
+  Flex,
+  Link,
+  IconButton,
+  useColorMode,
+  Text,
+  Box,
+} from "@chakra-ui/react";
 import { FiGithub, FiTwitter, FiLinkedin, FiMail } from "react-icons/fi";
 
 export const Footer = () => {
@@ -24,11 +31,7 @@ export const Footer = () => {
       visibility={("hidden", "visible", "visible")}
       display={["flex", "flex", "flex"]}
     >
-      <div display="flex" flexDirection="column" align="center">
-        <Text color={footerColor[colorMode]}>
-          Looks like you've made it to the end of this page... Thanks for coming
-          this far..
-        </Text>
+      <Box display="flex" flexDirection="row" align="center">
         <Link
           href="https://twitter.com/success_hycenth"
           title="Twitter"
@@ -78,7 +81,7 @@ export const Footer = () => {
             _hover={{ backgroundColor: footerHoverBg[colorMode] }}
           />
         </Link>
-      </div>
+      </Box>
       <div>
         <NextLink href="/about" passHref>
           <Link

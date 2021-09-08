@@ -160,7 +160,7 @@ const MyTechnology = () => {
             <Td>1yr experience</Td>
           </Tr>
 
-          <Text fontSize="23px">Css Libraries</Text>
+          <Text fontSize="23px">CSS Libraries</Text>
 
           <Tr>
             <Td>
@@ -169,7 +169,7 @@ const MyTechnology = () => {
                 color={linkColor[colorMode]}
                 isExternal
               >
-                Sass
+                SASS
               </Link>
             </Td>
           </Tr>
