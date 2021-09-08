@@ -25,6 +25,8 @@ const Layout = ({ children }) => {
         color={color[colorMode]}
         px={[0, 4, 4]}
         mt={[4, 8, 8]}
+        overflowX="hidden"
+        overflowY="hidden"
       >
         {children}
       </Flex>

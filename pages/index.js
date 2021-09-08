@@ -1,5 +1,13 @@
 import Head from "next/head";
-import { useColorMode, Heading, Text, Flex, Stack } from "@chakra-ui/react";
+import {
+  useColorMode,
+  Heading,
+  Text,
+  Flex,
+  Stack,
+  Container,
+  Box,
+} from "@chakra-ui/react";
 
 import Wrapper from "../components/Wrapper";
 import FeaturedProjectCard from "../components/FeatureProjects";
@@ -29,7 +37,6 @@ export default function Index() {
           spacing={8}
           justifyContent="center"
           alignItems="flex-start"
-          m="0 auto 4rem auto"
           maxWidth="750px"
           px={2}
         >

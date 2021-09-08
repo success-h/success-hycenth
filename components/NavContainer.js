@@ -29,6 +29,8 @@ const NavContainer = ({ children }) => {
       mb={[2, 6, 6]}
       mx="auto"
       mt={[4, 8, 8]}
+      overflowX="hidden"
+      overflowY="hidden"
     >
       {children}
     </Flex>

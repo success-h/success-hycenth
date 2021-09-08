@@ -36,7 +36,6 @@ const Nav = () => {
               color={color[colorMode]}
               as="a"
               variant="ghost"
-              p={[1, 2, 3]}
               _hover={{ backgroundColor: navHoverBg[colorMode] }}
             >
               Home

@@ -17,6 +17,7 @@ const Wrapper = ({ children }) => {
 
   return (
     <Container
+      z="100vw"
       as="main"
       alignItems="center"
       display="flex"
@@ -26,7 +27,6 @@ const Wrapper = ({ children }) => {
       color={color[colorMode]}
       px={[0, 4, 4]}
       mt={[4, 8, 8]}
-      maxWidth="750px"
       minHeight="100vh"
       p={3}
     >
