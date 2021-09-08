@@ -38,7 +38,7 @@ const TechStack = () => {
         Tech Stack For This Website
       </Heading>
 
-      <Table variant="simple">
+      <Table variant="simple" p={9}>
         <Thead>
           <Tr>
             <Th>Name</Th>

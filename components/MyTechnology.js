@@ -41,7 +41,7 @@ const MyTechnology = () => {
       <Text color={colorSecondary[colorMode]} mb={4} align="center">
         These are the technologies and stacks I have experience with.
       </Text>
-      <Table variant="simple" p={15}>
+      <Table variant="simple" p={7}>
         <Thead>
           <Tr>
             <Th>Name</Th>
@@ -101,8 +101,10 @@ const MyTechnology = () => {
 
             <Td>(Entry Level)basic python</Td>
           </Tr>
+          <br />
 
           <Text fontSize="25px">Frameworks</Text>
+          <br />
 
           <Tr>
             <Td>
@@ -160,7 +162,9 @@ const MyTechnology = () => {
             <Td>1yr experience</Td>
           </Tr>
 
+          <br />
           <Text fontSize="23px">CSS Libraries</Text>
+          <br />
 
           <Tr>
             <Td>
