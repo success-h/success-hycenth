@@ -1,0 +1,21 @@
+.body {
+  background-color: rgba(127, 255, 212, 0.281);
+  border: 2px solid rgb(0, 27, 148);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 5px;
+}
+
+.head {
+  color: rgb(61, 194, 204);
+  font-size: 50px;
+}
+
+.nav {
+  backdrop-filter: saturate(180%) blur(20px);
+  transition: height 0.8s, line-height 0.5s;
+  z-index: 100;
+}
