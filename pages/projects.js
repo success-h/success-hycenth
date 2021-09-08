@@ -1,14 +1,4 @@
-import {
-  Stack,
-  Flex,
-  useColorMode,
-  Button,
-  Text,
-  Badge,
-  Image,
-  Box,
-  SimpleGrid,
-} from "@chakra-ui/react";
+import { Flex, Button, Text, Image, Box, SimpleGrid } from "@chakra-ui/react";
 import Link from "next/link";
 import Wrapper from "../components/Wrapper";
 import { WORKS_DATA } from "../components/constants";
@@ -35,6 +25,7 @@ const Projects = () => {
               rounded="10px"
               boxShadow="md"
               boxShadow="base"
+              key={item.id}
             >
               <Image src={item.imageUrl} h="200px" w="100%" objectFit="cover" />
               <Box p={5}>
