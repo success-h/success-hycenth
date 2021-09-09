@@ -55,6 +55,12 @@ export default function Index() {
             </Text>
           </Flex>
         </Stack>
+        <br />
+
+        <Text fontSize="xl" fontWeight="bold">
+          Recent Projects
+        </Text>
+        <br />
         <FeaturedProjectCard />
         <TechStack />
         <MyTechnology />
