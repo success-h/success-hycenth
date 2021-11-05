@@ -48,7 +48,7 @@ export const WORKS_DATA = [
     id: 4,
     svgImage:
       "https://res.cloudinary.com/dp3a4be7p/image/upload/v1630917074/website/Group_2_enpmac.png",
-    site: "https://success-image-gallary.netlify.app",
+    site: "https://priceless-brown-333160.netlify.app/",
     source: "https://github.com/success-h/image-gallery",
     alt: "galary image",
     badge: "React",

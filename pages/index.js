@@ -32,6 +32,10 @@ export default function Index() {
           <title>Home - Success Hycenth</title>
           <link rel="icon" href="/mylogo.svg" />
           <meta
+            name="google-site-verification"
+            content="XNp4jlqCYulnlfH3SDfOKDwjxg9xaKxjY4qPD5GDqDE"
+          />
+          <meta
             name="Success Hycenth, welcome to my portfolio website"
             content="Success Hycenth Portfolio Website"
             description="Hycenth Successs - Software developer"
