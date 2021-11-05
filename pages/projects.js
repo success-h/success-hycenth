@@ -3,7 +3,12 @@ import Link from "next/link";
 import Wrapper from "../components/Wrapper";
 import { WORKS_DATA } from "../components/constants";
 import { motion } from "framer-motion";
-import Head from "next/head";
+import { NextSeo } from "next-seo";
+
+const url = "https://successhycenth.netlify.app/projects";
+const title = "Projects – Success Hycenth";
+const description =
+  "Here are some of the open source projects and GitHub repos.";
 
 const Projects = () => {
   return (
@@ -12,10 +17,16 @@ const Projects = () => {
       animate={{ scaleY: 1 }}
       exit={{ scaleY: 0 }}
     >
-      <Head>
-        <link rel="icon" href="/logo.ico" />
-        <title>Projects - Success Hycenth</title>
-      </Head>
+      <NextSeo
+        title={title}
+        description={description}
+        canonical={url}
+        openGraph={{
+          url,
+          title,
+          description,
+        }}
+      />
       <Wrapper>
         <SimpleGrid display="grid" columns={[1, 1, 2, 2]} gap={28} mb={8}>
           {WORKS_DATA.map((item) => (
@@ -26,7 +37,6 @@ const Projects = () => {
               boxShadow="md"
               boxShadow="base"
               key={item.id}
-             
             >
               <Image src={item.imageUrl} h="200px" w="100%" objectFit="cover" />
               <Box pl={8} pr={8} pt={4} pb={4}>
@@ -37,9 +47,9 @@ const Projects = () => {
               <Box pr={8} pl={8} mt={-2}>
                 <Text>{item.text}</Text>
               </Box>
-              <Flex justify="space-between" mt={4} mb={6} pl={6} pr={6} > 
+              <Flex justify="space-between" mt={4} mb={6} pl={6} pr={6}>
                 <Link href={item.site}>
-                  <Button color="teal.400" variant="solid" fontSize="10px" >
+                  <Button color="teal.400" variant="solid" fontSize="10px">
                     View Site
                   </Button>
                 </Link>

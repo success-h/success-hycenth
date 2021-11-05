@@ -3,6 +3,8 @@ import {
   ColorModeProvider,
   useColorMode,
 } from "@chakra-ui/react";
+import { DefaultSeo } from "next-seo";
+import SEO from "../next-seo.config";
 import Layout from "../components/Layout";
 import customTheme from "../styles/theme";
 import { Global, css } from "@emotion/react";
@@ -54,6 +56,7 @@ function MyApp({ Component, pageProps }) {
         <GlobalStyles>
           <Layout>
             <AnimatePresence>
+              <DefaultSeo {...SEO} />
               <Component {...pageProps} />
             </AnimatePresence>
           </Layout>

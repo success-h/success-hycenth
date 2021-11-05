@@ -1,5 +1,11 @@
 import React, { useState } from "react";
 import Head from "next/head";
+import { getAllFilesFrontMatter } from "../lib/mdx";
+import BlogPost from "../components/BlogPost";
+import { SearchIcon } from "@chakra-ui/icons";
+import { motion } from "framer-motion";
+import { NextSeo } from "next-seo";
+
 import {
   Heading,
   Flex,
@@ -9,11 +15,10 @@ import {
   InputRightElement,
 } from "@chakra-ui/react";
 
-import { getAllFilesFrontMatter } from "../lib/mdx";
-import BlogPost from "../components/BlogPost";
-
-import { SearchIcon } from "@chakra-ui/icons";
-import { motion } from "framer-motion";
+const url = "https://benjamincarlson.io/blog";
+const title = "Blog – Benjamin Carlson";
+const description =
+  "Personal blog for Benjamin Carlson. I write about computer science, web development, python automation, and more.";
 
 export default function Blog({ posts }) {
   const [searchValue, setSearchValue] = useState("");
@@ -33,10 +38,16 @@ export default function Blog({ posts }) {
       animate={{ scaleY: 1 }}
       exit={{ scaleY: 0 }}
     >
-      <Head>
-        <link rel="icon" href="/logo.ico" />
-        <title>Blog - Success Hycenth</title>
-      </Head>
+      <NextSeo
+        title={title}
+        description={description}
+        cononical={url}
+        openGraph={{
+          url,
+          title,
+          description,
+        }}
+      />
       <>
         <Stack
           as="main"

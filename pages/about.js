@@ -18,36 +18,35 @@ import AboutWrap from "../components/AboutWrap";
 import { motion } from "framer-motion";
 
 const url = "https://successhycenth.io/about";
-const titleSEO = "Success Hycenth";
+const title = "Success Hycenth";
 const description = "I am a developer and creator. Here are some of my links.";
 
 const Hello = () => {
   const { data } = useSWR("/api/links", fetcher);
-  const title = data?.title;
+  // const title = data?.title;
   const vid_url = data?.vid_url;
-
   return (
     <motion.div
       initial={{ scaleY: 0 }}
       animate={{ scaleY: 1 }}
       exit={{ scaleY: 0 }}
     >
+      <NextSeo
+        title={title}
+        description={description}
+        cononical={url}
+        openGraph={{
+          url,
+          title,
+          description,
+        }}
+      />
       <AboutWrap
         maxHeight="100vh"
         maxWidth="700px"
         display={["flex", "flex", "flex", "flex"]}
         zIndex={-100}
       >
-        <NextSeo
-          title={titleSEO}
-          description={description}
-          canonical={url}
-          openGraph={{
-            url,
-            title,
-            description,
-          }}
-        />
         <Container>
           <Stack
             as="main"

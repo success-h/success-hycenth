@@ -29,8 +29,13 @@ export default function Index() {
     >
       <Wrapper>
         <Head>
-          <link rel="icon" href="/logo.ico" />
           <title>Home - Success Hycenth</title>
+          <link rel="icon" href="/mylogo.svg" />
+          <meta
+            name="Success Hycenth, welcome to my portfolio website"
+            content="Success Hycenth Portfolio Website"
+            description="Hycenth Successs - Software developer"
+          />
         </Head>
         <Stack
           as="main"
