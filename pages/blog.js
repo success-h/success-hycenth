@@ -15,7 +15,7 @@ import {
   InputRightElement,
 } from "@chakra-ui/react";
 
-const url = https://successhycenth.netlify.app/blog;
+const url = "https://successhycenth.netlify.app/blog";
 const title = "Blog – Success Hycenth";
 const description =
   "Personal blog for Hycenth Success, I write about web development, python automation, and more.";
