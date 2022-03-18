@@ -15,10 +15,10 @@ import {
   InputRightElement,
 } from "@chakra-ui/react";
 
-const url = "https://benjamincarlson.io/blog";
-const title = "Blog – Benjamin Carlson";
+const url = https://successhycenth.netlify.app/blog;
+const title = "Blog – Success Hycenth";
 const description =
-  "Personal blog for Benjamin Carlson. I write about computer science, web development, python automation, and more.";
+  "Personal blog for Hycenth Success, I write about web development, python automation, and more.";
 
 export default function Blog({ posts }) {
   const [searchValue, setSearchValue] = useState("");
