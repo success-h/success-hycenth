@@ -17,7 +17,7 @@ import Wrapper from "../components/Wrapper";
 import AboutWrap from "../components/AboutWrap";
 import { motion } from "framer-motion";
 
-const url = "https://successhycenth.io/about";
+const url = "https://successhycenth.netlify.app/about";
 const title = "Success Hycenth";
 const description = "I am a developer and creator. Here are some of my links.";
 
